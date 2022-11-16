@@ -520,6 +520,10 @@ h2 {
     color: var(--black);
     outline: none;
     width: 169px;
+    appearance: none;
+    background-image: url(../img/form-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 .form input[type=number] {
@@ -528,6 +532,7 @@ h2 {
 
 .form button[type=submit] {
     flex-grow: 1;
+    margin-left: 10px;
 }
 
 .contacts {
@@ -604,13 +609,15 @@ h2 {
     border-radius: 15px;
     margin-bottom: 30px;
     padding: 45px;
+    position: relative;
+    overflow: hidden;
 }
 
 .footer .footer__row {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 30px;
+    gap: 125px;
 }
 
 .footer .footer__copyright {
@@ -642,7 +649,12 @@ h2 {
 }
 
 .footer .footer__column:nth-child(2) {
+    flex-grow: 1;
+}
+
+.footer .footer__column:nth-child(2)>*{
     max-width: 360px;
+
 }
 
 .footer .footer__column:nth-child(3) {
@@ -671,3 +683,9 @@ h2 {
 .footer .footer__icon:active path.bg {
     fill: var(--orange-night);
 }
+
+.footer .footer__img{
+    position: absolute;
+    right: 176px;
+    bottom: -27px;
+} 
